@@ -1,0 +1,59 @@
+<ion-view view-title={{pub.name}}>
+  <ion-content data-tap-disabled="false" class="specific-pub-page">
+
+    <div>
+      About this pub:<br>
+      <div class="pub-description">
+        {{pub.description}}
+      </div>
+    </div>
+
+    <div>
+      Owner: {{owner.fullName}}
+    </div>
+
+    <ion-toggle ng-show="pub.promotions.length > 0" ng-model="showPromotions" toggle-class="toggle-calm" class="togglePromotions">Promotions</ion-toggle>
+
+    <div ng-show="showPromotions">
+      <div ng-repeat="promotion in pub.promotions" >
+        <promotions-row item="promotion"></promotions-row>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="pub-options" ng-show="userLoggedIn">
+      <div class="options-title">Options</div>
+      <ion-checkbox class="pub-option" ng-model="favorite" ng-change="updateFavorite()">Is Favorite</ion-checkbox>
+
+    </div>
+
+    <div class="row specific-pub-actions" ng-show="userLoggedIn">
+
+      <div class="col col-10"></div>
+
+      <div class="col col-80">
+
+        <div class="row">
+            <div class="col align-center">
+            <i class="icon ion-ios-download pub-action" ng-click="checkIn()"></i><br>
+            <div class="pub-action-label">Check In</div>
+          </div>
+
+          <div class="col align-center">
+            <i class="icon ion-cube pub-action"></i><br>
+            <div class="pub-action-label">Something else</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col col-10"></div>
+
+
+    </div>
+
+
+
+  </ion-content>
+</ion-view>

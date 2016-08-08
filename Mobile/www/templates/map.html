@@ -1,0 +1,26 @@
+<ion-view view-title="Map">
+  <ion-content class="map-container">
+
+      <div>
+        <div id="map" data-tap-disabled="true" ng-click="cancelPub()"></div>
+      </div>
+
+      <div class="row" ng-show="clickedPub">
+        <div class="col col-33 col-offset-33 col-center">
+
+          <div class="pub-to-visit">
+            <div>
+              <a class="button button-icon ion-ios-navigate pub-to-visit-details" ui-sref="app.specific({pubid: clickedPub.id})"></a>
+              <a class="button button-icon ion-ios-information pub-to-visit-details" ng-click="openPopup()"></a>
+              <a class="button button-icon ion-ios-plus pub-to-visit-details"></a>
+            </div>
+            <div class="pub-to-visit-name">
+              {{clickedPub.name}}
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  </ion-content>
+</ion-view>

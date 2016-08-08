@@ -1,0 +1,23 @@
+.pub-item{
+  background: #dcdcdc;
+  padding: 5px;
+}
+
+.pub-item-heading{
+  background: #ebebeb;
+  padding: 6px;
+}
+
+.pub-item-content{
+}
+
+.pub-item-actions{
+  float: right;
+  font-size: 40px;
+}
+
+.pub-item-flag{
+  float: right;
+  font-size: 20px;
+  margin-left: 5px;
+}

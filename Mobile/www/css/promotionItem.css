@@ -1,0 +1,14 @@
+.promotion-item{
+  background: #dcdcdc;
+  padding: 5px;
+}
+
+.promotion-item-content{
+  font-size: 16px;
+}
+
+.promotion-item-footer{
+  background: #ebebeb;
+  padding: 6px;
+  font-size: 12px;
+}

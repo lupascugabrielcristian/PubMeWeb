@@ -1,0 +1,17 @@
+<ion-view view-title="My Offers">
+  <ion-content>
+
+    <div ng-show="!userLogedIn">
+      Should be logged in
+    </div>
+
+    <div>
+
+      <div ng-repeat="offer in offers">
+        <promotions-row item="offer"></promotions-row>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

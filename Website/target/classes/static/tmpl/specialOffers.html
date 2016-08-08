@@ -1,0 +1,94 @@
+<div class="specialOffersScreen">
+
+    <div class="small-space"></div>
+
+    <div class="row">
+        <div class="col-lg-5 editTitle">
+            Pub's Offers
+        </div>
+    </div>
+
+    <div class="small-space"></div>
+
+
+    <div class="offers-space">
+
+        <div class="row" ng-show="offers.length == 0">
+            <div class="col-lg-4 col-lg-offset-4">
+                <p>
+                    Your pub have no offers to show
+                </p>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-lg-offset-3">
+            <div ng-repeat="offer in offers">
+                <special-offer item="offer" savefc="saveAfterEdit" removefc="removeOffer"></special-offer>
+            </div>
+        </div>
+    </div>
+
+    <div class="pub-offers-actions">
+        <button class="btn" ng-click="addNewOffer()">Add new special offer</button>
+    </div>
+</div>
+
+
+<div class="modal-overlay" ng-show="newOfferShow">
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+
+            <div class="panel panel-default new-offer-modal">
+                <div class="panel-body">
+
+                    <div class="offer-row new-offer-title">
+                        <p>New Offer</p>
+                    </div>
+
+                    <div class="offer-row">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <label class="col-sm-1 control-label" for="title">Title</label>
+                            </div>
+                            <div class="col-sm-11">
+                                <input type="text" class="form-control" id="title" ng-model="newOffer.title">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offer-period offer-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <label class="col-sm-3" for="from">From</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input id="from" class="offer-date-input" type="text" placeholder="mm/dd/yy HH/MM" ng-model="newOffer.startDate">
+                            </div>
+                            <div class="col-sm-2">
+                                <label class="col-sm-3" for="to">To</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <input id="to" class="offer-date-input" type="text" placeholder="mm/dd/yy HH/MM" ng-model="newOffer.endDate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-row">
+                        <div>
+                            <textarea class="input-offer" id="edit" rows="5" ng-model="newOffer.description" placeholder="Description"></textarea>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel-footer">
+                    <button class="btn" ng-click="submitOffer()">Add</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col">
+
+    <div class="pub-item">
+
+      <div class="pub-item-heading">
+        {{item.name}}
+
+        <i class="icon ion-android-favorite-outline pub-item-flag" ng-show="item.favorite"></i>
+        <i class="icon ion-happy-outline pub-item-flag" ng-show="item.promotions.length > 0"></i>
+      </div>
+
+      <div class="pub-item-content">
+        <div class="row">
+
+          <div class="col-80">
+              {{item.description}} <br>
+              Visits: {{visitors}}
+          </div>
+
+          <div class="col-20">
+              <i class="icon ion-ios-navigate-outline pub-item-actions" ui-sref="app.specific({pubid: item.id})"></i>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<ion-view>
+  <ion-content>
+
+    <div class="home-page">
+      <div class="row padding">
+        <div class="col col-80 col-offset-10">
+
+          <div class="home-content big-fonts">
+            Pub Me
+            <div class="sub-title">
+              Mobile
+            </div>
+          </div>
+
+
+          <div class="list">
+
+            <div class="row home-icons">
+
+              <div class="col home-button">
+                <i  ui-sref="app.all" class="icon ion-aperture home-icon"></i><br>
+                <div class="home-icon-title">View All</div>
+              </div>
+
+              <div class="col home-button" ng-class="{ 'deactivated': !userLoggedIn }">
+                <i  ui-sref="app.myoffers" class="icon ion-ios-bookmarks home-icon" ng-disabled="!userLoggedIn"></i><br>
+                <div class="home-icon-title">My Offers</div>
+              </div>
+
+              <div class="col home-button" ng-class="{ 'deactivated': !userLoggedIn }">
+                <i  ui-sref="app.mypubs" class="icon ion-ios-heart home-icon"  ng-disabled="!userLoggedIn"></i><br>
+                <div class="home-icon-title">My Pubs</div>
+              </div>
+
+              <div class="col">
+                <i ui-sref="app.map" class="icon ion-ios-world home-icon"></i>
+                <div  class="home-icon-title">Map</div>
+              </div>
+
+            </div>
+
+            <div class="row home-icons">
+
+              <div class="col">
+                <i ui-sref="app.login" class="icon ion-log-in home-icon"></i><br>
+                <div  class="home-icon-title">Log-In</div>
+              </div>
+
+
+
+              <div class="col home-button">
+                <i  class="icon ion-ios-cog home-icon"></i><br>
+                <div class="home-icon-title">Settings</div>
+              </div>
+
+              <div class="col">
+                <i ui-sref="app.about" class="icon ion-ios-help home-icon"></i>
+                <div class="home-icon-title">About</div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

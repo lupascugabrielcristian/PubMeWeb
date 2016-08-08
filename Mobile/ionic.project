@@ -1,0 +1,58 @@
+{
+  "name": "PubMe",
+  "app_id": "026f3696",
+  "proxies": [
+    {
+      "path": "/greeting",
+      "proxyUrl": "http://localhost:8080/greeting"
+    },
+    {
+      "path": "/database",
+      "proxyUrl": "http://localhost:8080/database"
+    },
+    {
+      "path": "/put",
+      "proxyUrl": "http://localhost:8080/put?content="
+    },
+    {
+      "path": "/delete",
+      "proxyUrl": "http://localhost:8080/delete?query="
+    },
+    {
+      "path": "/database/around",
+      "proxyUrl": "http://localhost:8080/database/around"
+    },
+    {
+      "path": "/database/aroundParams",
+      "proxyUrl": "http://localhost:8080/database/aroundParams"
+    },
+    {
+      "path": "/single",
+      "proxyUrl": "http://localhost:8080/single"
+    },
+    {
+      "path": "/addVisitor",
+      "proxyUrl": "http://localhost:8080/addVisitor"
+    },
+    {
+      "path": "/get/owner",
+      "proxyUrl": "http://localhost:8080/get/owner"
+    },
+    {
+      "path": "/login/user",
+      "proxyUrl": "http://localhost:8080/login/user"
+    },
+    {
+      "path": "/pub/favorite",
+      "proxyUrl": "http://localhost:8080/pub/favorite"
+    },
+    {
+      "path": "/user/offers",
+      "proxyUrl": "http://localhost:8080/user/offers"
+    },
+    {
+      "path": "/get/favoritePubs",
+      "proxyUrl": "http://localhost:8080/get/favoritePubs"
+    }
+  ]
+}

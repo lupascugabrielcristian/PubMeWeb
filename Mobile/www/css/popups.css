@@ -1,0 +1,33 @@
+.popup-window{
+  padding: 0 8px 0 8px;
+}
+
+.popup-button{
+  float: right;
+}
+
+.popup-line{
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.half-popup-line-left{
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  float: left;
+  width: 50%;
+}
+
+.half-popup-line-right{
+  margin: 5px;
+  padding: 5px;
+  text-align: right;
+  float: right;
+  width: 50%;
+}
+
+.popup-button{
+  font-size: 40px;
+}

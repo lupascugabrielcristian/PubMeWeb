@@ -1,0 +1,83 @@
+.right-margin-20{
+    margin-right: 20px;
+}
+
+.right-margin-10{
+    margin-right: 10px;
+}
+
+.right-margin-5{
+    margin-right: 5px;
+}
+
+.left-margin-20{
+    margin-left: 20px;
+}
+
+.left-margin-10{
+    margin-left: 10px;
+}
+
+.left-margin-5{
+    margin-left: 5px;
+}
+
+.up-margin-20{
+    margin-top: 20px;
+}
+
+.up-margin-10{
+    margin-top: 10px;
+}
+
+.up-margin-5{
+    margin-top: 5px;
+}
+
+.down-margin-20{
+    margin-bottom: 20px;
+}
+
+.down-margin-10{
+    margin-bottom: 10px;
+}
+
+.down-margin-5{
+    margin-bottom: 5px;
+}
+
+.small-space{
+    height: 50px;
+}
+
+.medium-space {
+    height: 100px;
+}
+
+.large-space {
+    height: 200px;
+}
+
+.pad-1-right {
+    padding-right: 0.5em;
+}
+
+.pad-2-right {
+    padding-right: 1em;
+}
+
+.pad-3-right {
+    padding-right: 1.5em;
+}
+
+.pad-1-left {
+    padding-left: 0.5em;
+}
+
+.pad-2-left {
+    padding-left: 1em;
+}
+
+.pad-3-left {
+    padding-left: 1.5em;
+}

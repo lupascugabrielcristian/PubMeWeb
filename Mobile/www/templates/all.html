@@ -1,0 +1,12 @@
+<ion-view view-title="All Pubs">
+  <ion-content>
+
+    <div>
+      <div ng-repeat="pub in pubs">
+        <browse-row item="pub" visitors="visitors[$index]"></browse-row>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

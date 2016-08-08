@@ -1,0 +1,19 @@
+<div class="col-md-3 col-sm-6 hero-feature">
+
+
+    <div class="thumbnail">
+        <img src="{{imagePath}}" alt="">
+        <div class="caption">
+
+            <div class="pub-directive-name">{{item.name | uppercase}}</div>
+
+            <p>
+                <i class="fa fa-edit fa-3x editPub" ng-click="editPub(item.id)"  popover popover-html="Edit this one"></i>
+                <i class="fa fa-star-o fa-3x editPub" ng-click="viewSpecialOffers(item.id)" popover popover-html="Special Offers"></i>
+                <i class="fa fa-ban fa-3x editPub" ng-click="deleteOwnerPub(item.id)" popover popover-html="Remove Pub"></i>
+                <i class="fa fa-line-chart fa-2x editPub" ng-click="showDetails(item.id)" popover popover-html="Details"></i>
+            </p>
+        </div>
+    </div>
+
+</div>

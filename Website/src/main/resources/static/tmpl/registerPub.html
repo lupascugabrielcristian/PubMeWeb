@@ -1,0 +1,99 @@
+<div class="register-pub-screen">
+<div class="row">
+    <div class="col-lg-5 form-title-big">
+        Register pub
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-lg-offset-3">
+        <form class="form-horizontal" role="form">
+            <div class="register-pub-from">
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Pub's Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="name" class="form-control" ng-model="pubName">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Description</label>
+                    <div class="col-sm-9">
+                        <input type="text" placeholder="something catchy" class="form-control" ng-model="description">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Type</label>
+                    <div class=" col-sm-9">
+                        <div class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <input type="text" placeholder="Choose" class="form-control" ng-model="type" >
+                        </div>
+                        <ul class="dropdown-menu col-sm-12" aria-labelledby="dropdownMenu1">
+                            <li ng-repeat="t in types">
+                                <a ng-click="chooseType($index)">{{t}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Picture</label>
+                    <div class="col-sm-6">
+                        <div class="fileUpload">
+                            <span>Choose a file</span>
+                            <!--<input type="file" multiple class="upload" file-model="myFile" />-->
+                            <input type="file" multiple class="upload" nv-file-select uploader="uploader" />
+                        </div>
+
+                        <div ng-repeat="item in uploader.queue">
+                            {{item.file.name}} - {{getSize(item.file.size)}}
+                        </div>
+
+                    </div>
+                    <div class="col-sm-2">
+                        <!--<button class="btn btn-default" ng-click="uploadPicture()" ng-show="path == undefined">Upload</button>-->
+                        <button class="btn btn-default" ng-click="uploader.uploadAll(cb)" ng-show="path == undefined" ng-disabled="!uploader.getNotUploadedItems().length">Upload</button>
+                        <!--<div ng-show="path != undefined">OK</div>-->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Address</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Unirii 42" class="form-control" ng-model="address">
+
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-default" ng-click="setAddress()">Set</button>
+                    </div>
+                </div>
+
+
+
+                <div class="map form-group">
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <ng-map center="{{center}}" zoom="14" on-click="mapClick()">
+                            <marker position="{{marker.position}}"></marker>
+                        </ng-map>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <div class="pull-right">
+                            <button class="btn btn-default" ui-sref="home">Cancel</button>
+                            <button type="submit" class="btn btn-primary" ng-click="submitPub()">Register</button>
+                            <button type="submit" class="btn btn-primary" ng-click="shouUtils()" ng-show="false">Util</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </form>
+    </div><!-- /.col-lg-12 -->
+</div><!-- /.row -->
+</div>

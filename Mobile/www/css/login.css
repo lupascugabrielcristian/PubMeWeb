@@ -1,0 +1,24 @@
+.login-icon{
+  font-size: 54px;
+  float: right;
+  margin: 10px;
+}
+
+
+.login-form{
+  margin-top: 30%;
+}
+
+.login-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.login-ok{
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+}

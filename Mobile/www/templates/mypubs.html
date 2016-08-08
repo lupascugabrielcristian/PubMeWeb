@@ -1,0 +1,13 @@
+<ion-view view-title="My Pubs">
+  <ion-content data-tap-disabled="false">
+
+
+    <div>
+      <div ng-repeat="pub in userPubs">
+        <browse-row item="pub" visitors="visitors[$index]"></browse-row>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

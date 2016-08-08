@@ -1,0 +1,87 @@
+<div class="fixed-full-page pub-details">
+
+    <div class="fixed-full-page-title pub-details-title">
+        Pub details - {{pub.name}}
+    </div>
+
+    <div class="fixed-full-page-warning" ng-show="!distribution">
+        This pub have no distribution yet. Come back here later.
+    </div>
+
+    <div class="fixed-full-page-content" ng-show="distribution != null">
+
+        <div class="row">
+
+            <div  class="panel panel-default small-panel counter-panel">
+                <div class="panel-heading">
+                    Today
+                </div>
+                <div class="panel-body">
+                    {{distribution.visitorsToday}}
+                </div>
+            </div>
+
+            <div  class="panel panel-default small-panel counter-panel">
+                <div class="panel-heading">
+                    This Week
+                </div>
+                <div class="panel-body">
+                    {{distribution.visitorsThisWeek}}
+                </div>
+            </div>
+
+            <div  class="panel panel-default small-panel counter-panel">
+                <div class="panel-heading">
+                    This Month
+                </div>
+                <div class="panel-body">
+                    {{distribution.visitorsThisMonth}}
+                </div>
+            </div>
+
+            <div  class="panel panel-default small-panel counter-panel">
+                <div class="panel-heading">
+                    All Time Visitors
+                </div>
+                <div class="panel-body">
+                    {{distribution.totalVisitors}}
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div  class="panel panel-default chart-panel">
+                    <div class="panel-heading">
+                        Visitors this week
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="line" class="chart chart-line" chart-options="options1" chart-data="data1"
+                                chart-labels="labels1" chart-legend="false" chart-series="series1"
+                                chart-click="onClick" >
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div  class="panel panel-default chart-panel">
+                    <div class="panel-heading">
+                        Visitors this month
+                    </div>
+                    <div class="panel-body">
+                        <canvas id="line2" class="chart chart-line" chart-data="data2"
+                                chart-labels="labels2" chart-legend="false" chart-series="series2"
+                                chart-click="onClick" >
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+

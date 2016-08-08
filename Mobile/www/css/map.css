@@ -1,0 +1,53 @@
+.map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map-container .scroll {
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pub-to-visit {
+  position: fixed;
+  top: 75%;
+  width: 40%;
+  margin: 15px;
+  background-color: rgba(188, 188, 188, 0.48);
+  padding: 15px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+/* Small devices such as phone */
+@media (max-width: 567px) {
+  .pub-to-visit {
+    width: 70%;
+    left: 15%;
+    margin: 5px;
+    padding: 10px 0 10px 0;
+  }
+}
+
+.pub-to-visit-details{
+  font-size: 45px !important;
+  color: #4461FD;
+}
+
+.pub-to-visit-name{
+  text-align: center;
+  font-size: 20px !important;
+  color: #15406E;
+  font-weight: bold;
+}

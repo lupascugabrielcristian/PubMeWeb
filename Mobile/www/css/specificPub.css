@@ -1,0 +1,42 @@
+.specific-pub-page{
+  padding: 14px;
+  font-size: 18px;
+}
+
+.togglePromotions{
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.pub-description{
+  font-size: smaller;
+}
+
+.pub-options{
+}
+
+.options-title{
+  font-size: larger;
+  margin-bottom: 10px;
+}
+
+.pub-option {
+  border: none;
+}
+
+.pub-action{
+  font-size: 45px;
+}
+
+.pub-action:active{
+  color: red;
+  font-size: 43px;
+}
+
+.specific-pub-actions{
+  margin-top: 20px;
+}
+.pub-action-label{
+  font-size: 12px;
+}

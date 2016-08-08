@@ -1,0 +1,75 @@
+<div class="editScreen">
+
+    <div class="small-space"></div>
+
+    <div class="row">
+        <div class="col-lg-5 editTitle">
+            Edit your pub
+        </div>
+    </div>
+
+    <div class="small-space"></div>
+
+    <!--NAME-->
+    <div class="row">
+        <div class="col-lg-5 mycontent-left">
+            Nume
+        </div>
+
+        <div class="col-lg-1 mycontent-right">
+            <i class="fa fa-pencil  edit-pub-item" ng-click="changeVisibility('nume')"></i>
+        </div>
+
+        <div class="col-lg-6">
+            <input ng-readonly="!visibility.nume" type="text" class="form-control input-edit-pub" ng-model="pub.name">
+        </div>
+    </div>
+
+    <!--DESCRIPTION-->
+    <div class="row">
+        <div class="col-lg-5 mycontent-left">
+            Description
+        </div>
+
+        <div class="col-lg-1 mycontent-right">
+            <i class="fa fa-pencil edit-pub-item" ng-click="changeVisibility('description')"></i>
+        </div>
+
+        <div class="col-lg-6 ">
+            <input ng-readonly="!visibility.description" type="text" class="form-control input-edit-pub" ng-model="pub.description">
+        </div>
+    </div>
+
+    <!--TYPE-->
+    <div class="row">
+        <div class="col-lg-5 mycontent-left">
+            Type
+        </div>
+
+        <div class="col-lg-7 mycontent-right" ng-show="true">
+            {{type}} <i class="fa fa-pencil edit-pub-item"></i>
+        </div>
+    </div>
+
+    <div class="row" ng-show="address">
+        <div class="col-lg-5 mycontent-left">
+            Address
+        </div>
+
+        <div class="col-lg-7 mycontent-right">
+            {{address}} <i class="fa fa-pencil edit-pub-item"></i>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5">
+
+        </div>
+
+        <div class="col-lg-7">
+            <button class="btn btn-default" ng-click="saveChanges()">Save changes</button>
+        </div>
+    </div>
+
+</div>
+

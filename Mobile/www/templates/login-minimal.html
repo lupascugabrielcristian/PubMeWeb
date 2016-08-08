@@ -1,0 +1,48 @@
+<ion-view view-title="Log In">
+  <ion-content>
+
+  <div class="login-page">
+      <div class="row">
+          <div class="col-10"></div>
+          <div class="col-80">
+
+
+              <div class="login-form">
+
+                <div ng-show="!name">
+
+
+                  <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" ng-model="loginData.username">
+                  </label>
+
+
+                  <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="loginData.password">
+                  </label>
+
+                </div>
+
+                <div ng-show="name" class="login-ok">
+                    <p>Login Successful as</p>
+                    {{name}}
+                </div>
+
+                  <i class="icon ion-log-in login-icon" ng-click="loginUser()"></i>
+                  <i class="icon ion-social-github login-icon" ng-click="login('github')"></i>
+                  <i class="icon ion-social-google login-icon" ng-click="login('google')"></i>
+
+              </div>
+
+
+          </div>
+          <div class="col-10"></div>
+
+      </div>
+
+  </div>
+
+  </ion-content>
+</ion-view>

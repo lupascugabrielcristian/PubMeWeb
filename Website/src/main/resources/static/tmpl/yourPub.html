@@ -1,0 +1,22 @@
+<div class="your-pub-screen">
+
+    <div class="your-pubs-title">
+        Your Pubs
+    </div>
+
+    <div class="your-pubs">
+
+        <div class="row">
+
+            <div ng-show="showNoPubsWarning">
+                <h3>There are no pubs to show</h3>
+            </div>
+
+            <div ng-repeat="pub in pubs">
+                <owner-pub item="pub"></owner-pub>
+            </div>
+
+        </div>
+    </div>
+
+</div>

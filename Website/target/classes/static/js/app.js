@@ -1,0 +1,1 @@
+angular.module('PubMeApp', ['ui.router', 'ngMap', 'ng-sweet-alert', 'angularFileUpload', 'highcharts-ng', 'chart.js']);
